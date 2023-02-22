@@ -204,8 +204,15 @@ Title: "KMEHR MS"
         * ^comment = "Always set to true because it is not used"
       * version 0..* string "TO DO"
       * item 0..* class "To Do"
-        * id 0..* unknown "To Do"
-        * cd 0..* unknown "To Do"
+        * id 0..* integer "a sequential unique item ID within the transaction, start=1"
+        * cd 0..* unknown "describes the item category"
+          * ^comment = """
+          * S = CD-ITEM
+          * valueset:
+            * medication
+            * transactionreason
+            * healthcareelement
+          """
         * medicationUse 0..1 string "A seperate 'item' to describe the medication use with regards to the purpose of the medication"
         * beginMoment 1..1 date ""
           * ^comment = """
@@ -237,7 +244,7 @@ Title: "KMEHR MS"
         * temporality 0..* class "The temporality"
           * cd 0..1 string ""
           * ^requirements = """
-          * S=CD-TEMPORALITY ""
+          * S = CD-TEMPORALITY
           * valueset:
             * chronic
             * acute
@@ -248,19 +255,46 @@ Title: "KMEHR MS"
             * cd 0..* unknown "S-VALUE=CD-PERIODICITY"
         * posology 0..* class "To Do"
           * text 0..* string "To Do"
-        
         * regimen 0..* class "To Do"
-          * date 0..* date "To Do"    
-          * weekday 0..* integer "To Do"
-          * daynumber 0..* integer "To Do"
-          * daytime 0..* class "To Do"
-            * time 0..* unknown "To Do"
-            * dayperiod 0..* class "To Do"
-              * cd 0..* unknown "To Do"
-          * quantity 0..* class "To Do"
-            * decimal 0..* unknown "To Do"
-            * unit 0..* class "To Do"
-              * cd 0..* code "To Do"
+          * date 0..* date "date, mostly used icw periodicity=monthly or at a specifiec time of the day"
+            * ^comment = """
+            * Format= yyyy-mm-dd
+            """    
+          * weekday 0..* integer "Day of the week, mostly used icw periodicity=weekly"
+            * cd 1..1 string "the day of the week"
+              * ^comment = "S-VALUE=CD-WEEKDAY"
+              * ^example.valueString = "monday"
+          * daynumber 0..* integer "Daynumber, mostly used icw periodicity=weekly or daily"
+          * daytime 0..* class "indication of the intake moment"
+            * time 1..* unknown "Time of the day"
+              * ^requirements = """
+              * format = HH:MM:SS
+              """ 
+            * dayperiod 1..* class "To Do"
+              * cd 0..* string ""
+                * ^requirements = """
+                * S = CD-DAYPERIOD
+                * valueset:
+                  * morning
+                  * betweenlunchanddinner
+                  * beforesleep
+                  * beforebreakfast
+                  * ...
+                """
+          * quantity 1..1 class "To Do"
+            * decimal 0..* integer "the amount, expressed in a number"
+            * unit 0..* class "the prescribed administration unit where the decimal applies to"
+              * cd 0..* string "To Do"
+                * ^requirements = """
+                * S = CD_ADMINISTRATIONUNIT
+                * valueset:
+                  * 00001
+                  * gm
+                  * micrograms
+                  * tbl
+                  * mg
+                  * ...
+                """
         * route 0..* class "To Do"
           * cd 0..* unknown "To Do"
         * instructionforpatient 0..* unknown "To Do"
