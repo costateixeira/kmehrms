@@ -1,0 +1,72 @@
+[
+  {
+    "id" : "my-ig",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.com/fhir/example/ImplementationGuide/my-ig",
+    "version" : "1.0.0",
+    "name" : "ExampleIG"
+  },
+  {
+    "id" : "CD",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/CD",
+    "version" : "1.0.0",
+    "name" : "CD"
+  },
+  {
+    "id" : "DT",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/DT",
+    "version" : "1.0.0",
+    "name" : "DT"
+  },
+  {
+    "id" : "II",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/II",
+    "version" : "1.0.0",
+    "name" : "II"
+  },
+  {
+    "id" : "KMEHRMS",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/KMEHRMS",
+    "version" : "1.0.0",
+    "name" : "KMEHRMS"
+  },
+  {
+    "id" : "QT",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/QT",
+    "version" : "1.0.0",
+    "name" : "QT"
+  },
+  {
+    "id" : "ST",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ST",
+    "version" : "1.0.0",
+    "name" : "ST"
+  },
+  {
+    "id" : "TS",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/TS",
+    "version" : "1.0.0",
+    "name" : "TS"
+  },
+  {
+    "id" : "class",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/class",
+    "version" : "1.0.0",
+    "name" : "class"
+  },
+  {
+    "id" : "unknown",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/unknown",
+    "version" : "1.0.0",
+    "name" : "unknown"
+  }
+]
