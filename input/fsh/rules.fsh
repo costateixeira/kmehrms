@@ -76,3 +76,29 @@ RuleSet: medicationIdentification
   * compoundprescription 0..1 string "description of the compound prescription"
   * name 1..1 ST "Name of the compound prescription"
   * magistraltext 1..1 ST "Recipe of the prescription"
+
+RuleSet: periodDefenition
+* beginMoment 1..1 class ""
+  * date 1..1 date  ""
+    * ^requirements = "Format = yyyy-mm-dd"
+  * time 0..1 time ""
+    * ^requirements = "Format = HH:MM:SS or HH:MM:SS.xxxxxxx+02:00 or ... "
+* endMoment 0..1 class "The end moment"
+  * date 1..1 date  ""
+    * ^requirements = "Format = yyyy-mm-dd"
+  * time 0..1 time ""
+    * ^requirements = "Format = HH:MM:SS or HH:MM:SS.xxxxxxx+02:00 or ... "
+
+RuleSet: dateMandatory
+* date 1..1 date "The date when the line was registered in the schema"
+  * ^requirements = """
+    * ?To be checked if mandatory
+    * Format = yyyy-mm-dd
+  """
+        
+RuleSet: timeMandatory      
+* time 1..1 date "The time when the line was registered in the schema"
+  * ^requirements = """
+    * ?To be checked if mandatory
+    * ?Format = hh:mm:ss - To be checked
+  """

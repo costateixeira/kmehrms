@@ -44,16 +44,8 @@ Title: "KMEHR MS"
           * valueset:
             * medicationscheme
         """
-      * date 1..1 date "The date when the line was registered in the schema"
-        * ^comment = """
-        * ?To be checked if mandatory
-        * Format= yyyy-mm-dd
-        """
-      * time 1..1 date "The time when the line was registered in the schema"
-        * ^comment = """
-        * ?To be checked if mandatory
-        * ?Format= hh:mm:ss - To be checked
-        """
+      * insert dateMandatory
+      * insert timeMandatory
       * author 1..1 class "The author of the line in the schema"
         * insert hcparties
       * isComplete 1..1 boolean "is complete"
@@ -61,7 +53,8 @@ Title: "KMEHR MS"
       * isValidated 1..1 boolean "is validated"
         * ^comment = "Always set to true because it is not used"
       * version 1..1 integer "version of the medication scheme"
-    * MSETransaction-treatmentSuspension 0..* class "The treatment suspension lines"
+
+    * MSETransaction-treatmentSuspension 0..* class "The treatment suspension line(s)"
       * id-kmehr 1..1 integer "the KMEHR identifier for the medication line"
         * ^comment = "S-VALUE= ID-KMEHR"
         * ^requirements = """
@@ -83,16 +76,8 @@ Title: "KMEHR MS"
           * medicationschemeelement
           * treatmentsuspension
         """
-      * date 1..1 date "The date when the line was registered in the schema"
-        * ^comment = """
-        * ?To be checked if mandatory
-        * Format= yyyy-mm-dd
-        """
-      * time 1..1 date "The time when the line was registered in the schema"
-        * ^comment = """
-        * ?To be checked if mandatory
-        * ?Format= hh:mm:ss - To be checked
-        """
+      * insert dateMandatory
+      * insert timeMandatory
       * author 1..1 class "The author of the line in the schema"
         * insert hcparties
       * isComplete 1..1 boolean "is complete"
@@ -106,14 +91,7 @@ Title: "KMEHR MS"
           * S = CD-ITEM
           * value = medication
           """
-        * beginMoment 1..1 date "Start date of suspension"
-          * ^comment = """
-            * Format= yyyy-mm-dd
-            """
-        * endMoment 0..1 date "Re-Start date of medication"
-          * ^comment = """
-              * Format= yyyy-mm-dd
-              """
+        * insert periodDefenition
         * content 0..* class "To Do"
           * insert medicationIdentification
         * text 0..* string "Mandatory if compoundprescription is used - !!to be checked if possible in TS transaction!!"
@@ -162,17 +140,8 @@ Title: "KMEHR MS"
           * medicationschemeelement
           * treatmentsuspension
         """
-      * date 1..1 date "The date when the line was registered in the schema"
-        * ^comment = """
-        * ?To be checked if mandatory
-        * Format= yyyy-mm-dd
-        """
-
-      * time 1..1 date "The time when the line was registered in the schema"
-      * ^comment = """
-      * ?To be checked if mandatory
-      * ?Format= hh:mm:ss - To be checked
-      """
+      * insert dateMandatory
+      * insert timeMandatory
       * author 1..1 class "The author of the line in the schema"
         * insert hcparties
       * isComplete 1..1 boolean "is complete"
@@ -205,14 +174,7 @@ Title: "KMEHR MS"
           * S = CD-ITEM
           * value = medication
           """
-        * beginMoment 1..1 date ""
-          * ^comment = """
-            * Format= yyyy-mm-dd
-            """
-        * endMoment 0..1 date "The end moment"
-          * ^comment = """
-              * Format= yyyy-mm-dd
-              """
+        * insert periodDefenition
         * duration 0..1 integer "The duration is mutual exclusive with endMoment"
         * content 0..* class "To Do"
           * insert medicationIdentification
@@ -242,10 +204,7 @@ Title: "KMEHR MS"
               * ^example.valueString = "monday"
           * daynumber 0..* integer "Daynumber, mostly used icw periodicity=weekly or daily"
           * daytime 0..* class "indication of the intake moment"
-            * time 1..* unknown "Time of the day"
-              * ^requirements = """
-              * format = HH:MM:SS
-              """ 
+            * insert timeMandatory 
             * dayperiod 1..* class "To Do"
               * cd 0..* string ""
                 * ^requirements = """
@@ -283,8 +242,9 @@ Title: "KMEHR MS"
                 * transderm
                 * ...
               """
-        * instructionforpatient 0..* unknown "To Do"
-          * text 0..* unknown "To Do"
+        * instructionforpatient 0..* string "Usage instructions for the patient."
+          * ^comment = "L-VALUE = [language] fr or nl or ..."
+          * ^example.valueString = "a diminuer si possible"
           
 
                 
