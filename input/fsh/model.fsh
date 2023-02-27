@@ -22,6 +22,43 @@ Title: "KMEHR MS"
         """
       * ^comment = " To Be checked if always 1"
     * patient 1..1 class "the patient"
+      * id-inss 0..1 string "the Belgian Social Security Number identifier"
+        * ^requirements = """
+          * S = INSS
+          * format = 11 digits
+        """ 
+      * firstname 0..1 string "First name of the patient. If no first name exists, the element will be empty."
+      * familyname 0..1 string "Family name of the patient"
+      * birthdate 0..1 date "Birth date of the patient (uses the basic data types for dates)"
+      * deathdate 0..1 date "this is not used"
+      * sex 1..1 class ""
+        * cd 1..1 code "Sex of the patient"
+          * ^requirements = """
+            * S = CD-sex
+            * ^example.valueString = female
+          """            
+      * address 0..1 class "Home, work, … address(es) of the patient."
+        * cd 1..1 code ""
+          * ^requirements = """
+            * S = CD-ADDRESS 
+            * ^example.valueString = home
+          """
+        * country
+        * zip 0..1 integer ""
+        * city 0..1 string ""
+        * street 0..1 string ""
+        * housenumber 0..1 string ""
+      * nationality 0..1 string "Nationality of the patient. Initially, the use of the CD-COUNTRY dictionary was required. We now recommend the use of the CD-FED-COUNTRY dictionary."
+        * cd 1..1 code ""
+          * ^requirements = """
+            * S = CD-FED-COUNTRY
+            * ^example.valueString = de
+          """
+      * usuallanguage 0..1 string "Usual language of the patient using the W3C language codes."
+      * telecom 0..1 string "Fax, phone, … number(s) of the patient."
+      * recorddatetime 0..1 unknown "Date of recording of the patient data."
+      * text 0..1 string "Comment about the patient."
+
     * MSTransaction 1..1 class "The metadata for the message"
       * ^comment = "here is a comment"
       // * id-kmehr 1..1 integer "the KMEHR identifier for the medication line"
