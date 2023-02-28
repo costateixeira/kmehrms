@@ -38,7 +38,7 @@ RuleSet: hcparties
   * firstname 0..1 string "the first name of the individual"
   * familyname 0..1 string "the last name of the individual"
     * ^example.valueString = "Hendrix"
-  * address 0..* class "Home, work, … address(es) of the pateitn or healthcare party."
+  * address 0..* class "Home, work, ... address(es) of the patient or healthcare party."
     * cd 1..1 class ""
       * ^requirements = """
         * S-VALUE = CD-ADDRESS
@@ -60,24 +60,34 @@ RuleSet: hcparties
       * value = APPLICATION
     """
 RuleSet: medicationIdentification
-* medicinalproduct 0..* class "To Do"
+* medicinalproduct 0..* class "Description of the medicinal product"
   * intendedName 0..1 ST "Name of prescribed product"
   * intendedCd 0..1 CD "CD-DRUG-CNK + Code (CNK)"
   * deliveredName 0..1 ST "Name of delivered product"
   * deliveredCd 0..1 CD "CD-DRUG-CNK + Code (CNK)"
-* substanceproduct 0..* class "To Do"
+* substanceproduct 0..* class "Description of the generic product"
   * intendedName 0..1 ST "Name of prescribed product"
   * intendedCd 0..1 CD "Code of prescribed product (INN or CNK)"
-    * ^comment = "This has to be CNK, not a substance, because it is a delivered product"
+    * ^requirements = """
+    * S-Value= CD-INNCLUSTER is not supported
+    * S-Value= CD-VMPGROUP 
+    * code from MVP Groups 
+    """
+    * ^comment = "INN is not supported"
   * deliveredName 0..1 ST "Name of delivered product"
   * deliveredCd 0..1 CD "Code of delivered product (CNK)"
     * ^comment = "This has to be CNK, not a substance, because it is a delivered product"
-* compoundprescription 0..* class "To Do"
-  * compoundprescription 0..1 string "description of the compound prescription"
-  * name 1..1 ST "Name of the compound prescription"
+* compoundprescription 0..* class "Description of the compound product"
+  * ^comment = "Note that in XML this can directly be populated with the description (as it is in Wallonia)"
   * magistraltext 1..1 ST "Recipe of the prescription"
+  * compound 0..0 class "NOT USED"
+  * formularyReference 0..0 unknown "TBD"
+    // * id 0..1 string "description of the compound prescription"
+    // * medicinalProduct 0..1 class "description of the compound prescription"
+    // * substance 0..1 class "description of the compound prescription"
 
-RuleSet: periodDefenition
+
+RuleSet: periodDefinition
 * beginMoment 1..1 class ""
   * date 1..1 date  ""
     * ^requirements = "Format = yyyy-mm-dd"

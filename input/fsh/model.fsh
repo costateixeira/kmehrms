@@ -128,7 +128,9 @@ Title: "KMEHR MS"
           * S = CD-ITEM
           * value = medication
           """
-        * insert periodDefenition
+        * insert periodDefinition
+        * endMoment ^short = "the end date (and time) of the suspension"
+
         * content 0..* class "To Do"
           * insert medicationIdentification
         * text 0..* string "Mandatory if compoundprescription is used - !!to be checked if possible in TS transaction!!"
@@ -137,7 +139,7 @@ Title: "KMEHR MS"
             * S = CD-LIFECYCLE
             * value = suspended
           """
-        * lnk 1..1 string "using a link to the transaction of the related medicine"
+        * lnk 1..1 string "using a link to the transaction (in the current MedicationSchema) of the related medicine, "
           * ^requirements = """
             * TYPE = isplannedfor
             * URL = link to the ID-KMEHR of the medication this TS relates to
@@ -154,6 +156,16 @@ Title: "KMEHR MS"
         * text 1..* string "cardinality to be checked"
           * ^comment = "L-VALUE = [language] fr or nl or ..."
           * ^example.valueString = "Temporairement ne pas prendre en raison de l'interaction avec Y."
+
+
+
+
+
+
+
+
+
+
 
     * MSETransaction-medication 0..* class "The medication lines"
       * id-kmehr 1..1 integer "the KMEHR identifier for the medication line"
@@ -211,8 +223,12 @@ Title: "KMEHR MS"
           * S = CD-ITEM
           * value = medication
           """
-        * insert periodDefenition
-        * duration 0..1 integer "The duration is mutual exclusive with endMoment"
+        * insert periodDefinition
+        * duration 0..1 integer "The duration of the treatment" 
+          * ^requirements = """
+            The duration is mutually exclusive with endMoment
+            """
+//        * obeys duration-xor-endMoment
         * content 0..* class "To Do"
           * insert medicationIdentification
         * text 0..* string "Mandatory if compoundprescription is used"
@@ -228,8 +244,13 @@ Title: "KMEHR MS"
         * frequency 0..* class "To Do"
           * periodicity 0..* class "To Do"
             * cd 0..* unknown "S-VALUE=CD-PERIODICITY"
-        * posology 0..* class "To Do"
+        * posology 0..* class "The po"
           * text 0..* string "To Do"
+          * low 0..0 unknown "Not used here, only in SumEHR" 
+          * high 0..0 unknown "Not used here, only in SumEHR"
+          * unit 0..0 unknown "Not used here, only in SumEHR"
+          * takes 0..0 unknown "Not used here, only in SumEHR"
+
         * regimen 0..* class "To Do"
           * date 0..* date "date, mostly used icw periodicity=monthly or at a specifiec time of the day"
             * ^comment = """
@@ -279,9 +300,16 @@ Title: "KMEHR MS"
                 * transderm
                 * ...
               """
-        * instructionforpatient 0..* string "Usage instructions for the patient."
+        * instructionForOverDosing 0..0 unknown "NOT USED in MS"
+        * instructionForReimbursement 0..0 unknown "NOT USED in MS"
+        * isSubstitutionAllowed 0..0 unknown "NOT USED in MS"
+        * feedback 0..0 unknown "NOT USED in MS"
+        * local 0..0 unknown "NOT USED in MS"
+        * batch 0..0 unknown "NOT USED in MS"
+        * deliveryDate 0..0 unknown "NOT USED in MS"
+        * instructionforpatient 0..1 string "Usage instructions for the patient."
           * ^comment = "L-VALUE = [language] fr or nl or ..."
-          * ^example.valueString = "a diminuer si possible"
+          * ^example.valueString = "A diminuer si possible"
           
 
                 
