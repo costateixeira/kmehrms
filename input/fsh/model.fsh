@@ -31,8 +31,8 @@ Title: "KMEHR MS"
       * familyname 0..1 string "Family name of the patient"
       * birthdate 0..1 date "Birth date of the patient (uses the basic data types for dates)"
       * deathdate 0..1 date "this is not used"
-      * sex 1..1 class ""
-        * cd 1..1 code "Sex of the patient"
+      * sex 1..1 class "Sex of the patient"
+        * cd 1..1 code ""
           * ^requirements = """
             * S = CD-sex
             * ^example.valueString = female
@@ -44,10 +44,10 @@ Title: "KMEHR MS"
             * ^example.valueString = home
           """
         * country
-        * zip 0..1 integer ""
-        * city 0..1 string ""
-        * street 0..1 string ""
-        * housenumber 0..1 string ""
+        * zip 0..1 integer "Zip-code of the city"
+        * city 0..1 string "The name of the city"
+        * street 0..1 string "The name of the street"
+        * housenumber 0..1 string "Housenumber within the street"
       * nationality 0..1 string "Nationality of the patient. Initially, the use of the CD-COUNTRY dictionary was required. We now recommend the use of the CD-FED-COUNTRY dictionary."
         * cd 1..1 code ""
           * ^requirements = """
@@ -134,7 +134,7 @@ Title: "KMEHR MS"
         * content 0..* class "To Do"
           * insert medicationIdentification
         * text 0..* string "Mandatory if compoundprescription is used - !!to be checked if possible in TS transaction!!"
-        * lifecycle 1..1 string "todo"
+        * lifecycle 1..1 string "The indication of the status, only used in a TS with value 'suspended'"
           * ^requirements = """
             * S = CD-LIFECYCLE
             * value = suspended
@@ -229,9 +229,17 @@ Title: "KMEHR MS"
             The duration is mutually exclusive with endMoment
             """
 //        * obeys duration-xor-endMoment
-        * content 0..* class "To Do"
+        * content-medicationIdentification 0..* class "To Do"
           * insert medicationIdentification
+        * content 0..* string "Extra content field which can be added if neccessary"
+          * ^requirements = """
+            * S = LOCAL
+            * SL = SAMPROOF
+            * ^example.valueString = qSv76SJEeOMdbZdVgQEDZA==
+          """
         * text 0..* string "Mandatory if compoundprescription is used"
+          * ^comment = "L-VALUE = [language] fr or nl or ..."
+          * ^example.valueString = "Aluminiumchloride transpiratieremmende hydroalcoholische oplossing 15 % TMF" 
         * temporality 0..* class "The temporality"
           * cd 0..1 string ""
           * ^requirements = """

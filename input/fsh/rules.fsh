@@ -47,7 +47,7 @@ RuleSet: hcparties
     * nis 0..1 code "explanation: https://nl.wikipedia.org/wiki/NIS-code"
       * ^example.valueString = "24062"
   * telecom 0..* string "Fax, phone, … number(s) of the healthcare party."
-* hcparty-application 0..1 class ""
+* hcparty-application 0..1 class "the software identifier"
   * id 1..1 string "the software identifier"
     * ^requirements = """
       * S-VALUE = LOCAL
@@ -59,6 +59,7 @@ RuleSet: hcparties
       * S-VALUE = CD-HCPARTY
       * value = APPLICATION
     """
+    
 RuleSet: medicationIdentification
 * medicinalproduct 0..* class "Description of the medicinal product"
   * intendedName 0..1 ST "Name of prescribed product"
@@ -77,9 +78,11 @@ RuleSet: medicationIdentification
   * deliveredName 0..1 ST "Name of delivered product"
   * deliveredCd 0..1 CD "Code of delivered product (CNK)"
     * ^comment = "This has to be CNK, not a substance, because it is a delivered product"
+
 * compoundprescription 0..* class "Description of the compound product"
   * ^comment = "Note that in XML this can directly be populated with the description (as it is in Wallonia)"
   * magistraltext 1..1 ST "Recipe of the prescription"
+    * ^example.valueString = "R/ Aluminiumchloride hexahydraat 15 g + Isopropylalcohol 78 g + Gezuiverd water q.s. ad 100 g T"
   * compound 0..0 class "NOT USED"
   * formularyReference 0..0 unknown "TBD"
     // * id 0..1 string "description of the compound prescription"
@@ -88,12 +91,13 @@ RuleSet: medicationIdentification
 
 
 RuleSet: periodDefinition
-* beginMoment 1..1 class ""
+* beginMoment 1..1 class "The beginmoment of the medication/treatment suspension"
+    
   * date 1..1 date  ""
     * ^requirements = "Format = yyyy-mm-dd"
   * time 0..1 time ""
     * ^requirements = "Format = HH:MM:SS or HH:MM:SS.xxxxxxx+02:00 or ... "
-* endMoment 0..1 class "The end moment"
+* endMoment 0..1 class "The end moment of the medication/treatment suspension"
   * date 1..1 date  ""
     * ^requirements = "Format = yyyy-mm-dd"
   * time 0..1 time ""
