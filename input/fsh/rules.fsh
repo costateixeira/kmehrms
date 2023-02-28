@@ -68,11 +68,13 @@ RuleSet: medicationIdentification
   * deliveredCd 0..1 CD "CD-DRUG-CNK + Code (CNK)"
 * substanceproduct 0..* class "Description of the generic product"
   * intendedName 0..1 ST "Name of prescribed product"
-  * intendedCd 0..1 CD "Code of prescribed product (INN or CNK)"
+    * ^example.valueString = "chloorfenamine + paracetamol oraal 3,2 mg + 240 mg" 
+  * intendedCd 0..1 CD "Code of prescribed product (VMPGROUP or CNK)"
     * ^requirements = """
     * S-Value= CD-INNCLUSTER is not supported
     * S-Value= CD-VMPGROUP 
-    * code from MVP Groups 
+    * SV-value = e.g. LOCALDB
+    * ^example.valueString = "0006106"
     """
     * ^comment = "INN is not supported"
   * deliveredName 0..1 ST "Name of delivered product"
