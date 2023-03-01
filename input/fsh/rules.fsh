@@ -12,6 +12,24 @@ RuleSet: hcparties
     * ^example.valueString = "1990001916"
   * cd 1..1 code "the type of the hcparty"
     * ^comment = "S-VALUE= CD-HCPARTY"
+  * id-encryptionActor 0..1 integer "to be checked: usage & cardinality"
+    * ^requirements = """
+      * S-VALUE = ID-ENCRYPTION-ACTOR
+      * value = [selection of you NIHII nr]
+    """
+  * id-encryptionApplication 0..1 unknown ""
+    * ^requirements = """
+      * S-VALUE = ID-ENCRYPTION-APPLICATION
+    """
+  * cd-encryptionActor 0..1 class "to be checked: usage & cardinality"
+    * ^requirements = """
+      * S-VALUE = CD-ENCRYPTION-ACTOR
+      * valueset: 
+        * EHP
+        * NIHII
+        * SSIN
+        *...
+    """
   * name 0..1 string "the name of the org"
 * hcparty-individual 1..1 class "the identifier of the individual"
   * id-riziv 0..1 string "the RIZIV individual identifier"
@@ -48,7 +66,7 @@ RuleSet: hcparties
       * ^example.valueString = "24062"
   * telecom 0..* string "Fax, phone, … number(s) of the healthcare party."
 * hcparty-application 0..1 class "the software identifier"
-  * id 1..1 string "the software identifier"
+  * id 0..1 string "the software identifier"
     * ^requirements = """
       * S-VALUE = LOCAL
       * SL-VALUE = endusersoftwareinfo
@@ -59,6 +77,7 @@ RuleSet: hcparties
       * S-VALUE = CD-HCPARTY
       * value = APPLICATION
     """
+  * name 0..1 string "The name of the application."
     
 RuleSet: medicationIdentification
 * medicinalproduct 0..* class "Description of the medicinal product"
@@ -116,5 +135,12 @@ RuleSet: timeMandatory
 * time 1..1 date "The time when the line was registered in the schema"
   * ^requirements = """
     * ?To be checked if mandatory
-    * ?Format = hh:mm:ss - To be checked
+    * ?Format = hh:mm:ss
+  """
+
+  RuleSet: timeNotMandatory      
+* time 0..1 date "The time when the line was registered in the schema"
+  * ^requirements = """
+    * ?To be checked if not mandatory
+    * ?Format = hh:mm:ss
   """

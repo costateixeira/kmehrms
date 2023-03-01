@@ -5,10 +5,13 @@ Title: "KMEHR MS"
 
 * KMEHRMessage 1..1 class "KMEHR Message"
   * header 1..1 class "KMEHR Message header"
-    * id 0..1 string ""
-    * standard 0..1 class ""
-      * cd 0..1 CD "The version of the KMEHR standard used"
-        * ^comment = "S-VALUE= CD-STANDARD - value must always be '20161201' "
+//    * id 1..1 string ""
+    * standard 1..1 class ""
+      * cd 1..1 CD "The version of the KMEHR standard used"
+        * ^comment = """
+          * S-VALUE = CD-STANDARD 
+          * value = always '20161201' " refering the eHealth XSD version
+        """
     * date 0..1 date ""
     * time 0..1 time ""
     * sender 0..1 class ""
@@ -89,7 +92,7 @@ Title: "KMEHR MS"
         * ^comment = "Always set to true because it is not used"
       * isValidated 1..1 boolean "is validated"
         * ^comment = "Always set to true because it is not used"
-      * version 1..1 integer "version of the medication scheme"
+      * version 0..1 integer "version of the medication scheme"
 
     * MSETransaction-treatmentSuspension 0..* class "The treatment suspension line(s)"
       * id-kmehr 1..1 integer "the KMEHR identifier for the medication line"
@@ -145,17 +148,17 @@ Title: "KMEHR MS"
             * URL = link to the ID-KMEHR of the medication this TS relates to
               * format = "//transaction[id[@S='ID-KMEHR']='5']"
           """
-    * item-transactionreason 0..1 class "Extra information on the reason of suspention of the linked medication"
-      * id 0..* integer "a sequential unique item ID within the transaction, start=1"
-      * cd 0..* unknown "describes the item category"
-        * ^requirements = """
-          * S = CD-ITEM
-          * value = transactionreason
-          """
-      * content-text 0..* class ""
-        * text 1..* string "cardinality to be checked"
-          * ^comment = "L-VALUE = [language] fr or nl or ..."
-          * ^example.valueString = "Temporairement ne pas prendre en raison de l'interaction avec Y."
+      * item-transactionreason 0..1 class "Extra information on the reason of suspention of the linked medication"
+        * id 0..* integer "a sequential unique item ID within the transaction, start=1"
+        * cd 0..* unknown "describes the item category"
+          * ^requirements = """
+            * S = CD-ITEM
+            * value = transactionreason
+            """
+        * content-text 0..* class ""
+          * text 1..* string "cardinality to be checked"
+            * ^comment = "L-VALUE = [language] fr or nl or ..."
+            * ^example.valueString = "Temporairement ne pas prendre en raison de l'interaction avec Y."
 
 
 
@@ -216,6 +219,43 @@ Title: "KMEHR MS"
           * text 1..* string "cardinality to be checked"
             * ^comment = "L-VALUE = [language] fr or nl or ..."
             * ^example.valueString = "pression artérielle" 
+      * item-endCondition 0..1 class "Extra information on the endcondition of the medication within this MSE-transaction"
+        * id 0..* integer "a sequential unique item ID within the transaction, start=1"
+        * cd 0..* unknown "describes the item category"
+          * ^requirements = """
+            * S = CD-ITEM
+            * value = healthcareelement
+            """
+        * content-category 1..* class ""
+          * cd 0..* class ""
+            * ^requirements = """
+            * S-VALUE=CD-ITEM-MS
+            * value = endcondition
+            """
+        * content-text 0..* class ""
+          * text 1..* string "cardinality to be checked"
+            * ^comment = "L-VALUE = [language] fr or nl or ..."
+            * ^example.valueString = "pression artérielle" 
+      * item-beginCondition 0..1 class "Extra information on the begincondition of the medication within this MSE-transaction"
+        * id 0..* integer "a sequential unique item ID within the transaction, start=1"
+        * cd 0..* unknown "describes the item category"
+          * ^requirements = """
+            * S = CD-ITEM
+            * value = healthcareelement
+            """
+        * content-category 1..* class ""
+          * cd 0..* class ""
+            * ^requirements = """
+            * S-VALUE=CD-ITEM-MS
+            * value = begincondition
+            """
+        * content-text 0..* class ""
+          * text 1..* string "cardinality to be checked"
+            * ^comment = "L-VALUE = [language] fr or nl or ..."
+            * ^example.valueString = "pression artérielle" 
+      * item-origin 0..0 class "non-permitted"
+      * item-medicationType 0..0 class "non-permitted"
+      * item-adaptationFlag 0..0 class "non-permitted"
       * item-medication 0..* class "To Do"
         * id 0..* integer "a sequential unique item ID within the transaction, start=1"
         * cd 0..* unknown "describes the item category"
@@ -252,8 +292,17 @@ Title: "KMEHR MS"
         * frequency 0..* class "To Do"
           * periodicity 0..* class "To Do"
             * cd 0..* unknown "S-VALUE=CD-PERIODICITY"
-        * posology 0..* class "The po"
-          * text 0..* string "To Do"
+              * ^requirements = """
+                * valueset:
+                  * D
+                  * DT
+                  * J
+                  ...
+              """
+        * posology 0..* class "The freetext posology is mutual exclusive with the structured Regimen"
+          * text 1..1 string "Contains the ingestion pattern in textual form"
+            * ^comment = "L-VALUE = [language] fr or nl or ..."
+            * ^example.valueString = "tot 4 x per dag 1 tablet"
           * low 0..0 unknown "Not used here, only in SumEHR" 
           * high 0..0 unknown "Not used here, only in SumEHR"
           * unit 0..0 unknown "Not used here, only in SumEHR"
@@ -271,7 +320,7 @@ Title: "KMEHR MS"
           * daynumber 0..* integer "Daynumber, mostly used icw periodicity=weekly or daily"
           * daytime 0..* class "indication of the intake moment"
             * insert timeMandatory 
-            * dayperiod 1..* class "To Do"
+            * dayperiod 1..* class "mutual exclusive with <time>"
               * cd 0..* string ""
                 * ^requirements = """
                 * S = CD-DAYPERIOD
