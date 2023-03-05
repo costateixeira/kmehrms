@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BEVSMMedicationLineStatusReason",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-BEMedicationLineStatusReason.html\"><code>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason</code></a></li></ul></div>"
+  },
+  "url" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatusReason",
+  "version" : "1.0.0",
+  "name" : "BEVSMMedicationLineStatusReason",
+  "title" : "Medication line - Treatment status reason",
+  "status" : "active",
+  "date" : "2023-03-05T16:02:38+00:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medication line - Treatment status reason.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "056",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason"
+    }]
+  }
+}

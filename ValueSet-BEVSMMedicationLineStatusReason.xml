@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="BEVSMMedicationLineStatusReason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-BEMedicationLineStatusReason.html"><code>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason</code></a></li></ul></div>
+  </text>
+  <url value="http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatusReason"/>
+  <version value="1.0.0"/>
+  <name value="BEVSMMedicationLineStatusReason"/>
+  <title value="Medication line - Treatment status reason"/>
+  <status value="active"/>
+  <date value="2023-03-05T16:02:38+00:00"/>
+  <publisher value="My Organization"/>
+  <contact>
+    <name value="My Organization"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.com/committees"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="my-group@example.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Bob Smith"/>
+    <telecom>
+      <system value="email"/>
+      <value value="bobsmith@example.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Medication line - Treatment status reason."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="056"/>
+      <display value="Belgium"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason"/>
+    </include>
+  </compose>
+</ValueSet>

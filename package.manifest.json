@@ -1,6 +1,6 @@
 {
   "version" : "1.0.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20230301125804",
-  "name" : "my-ig"
+  "date" : "20230305160146",
+  "name" : "medicationschema"
 }

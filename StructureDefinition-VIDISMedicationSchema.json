@@ -1,0 +1,2011 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "VIDISMedicationSchema",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema\" title=\"VIDIS MedicationSchema Data Model\">VIDISMedicationSchema</a><a name=\"VIDISMedicationSchema\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">VIDIS MS</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.identifier\" title=\"Unique identifier for the schema\">identifier</a><a name=\"VIDISMedicationSchema.identifier\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-II.html\" title=\"Element\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identifier of the schema<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.version\" title=\"Unique version identifier for the schema\">version</a><a name=\"VIDISMedicationSchema.version\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-II.html\" title=\"Element\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Unique version identifier for the schema</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.type\" title=\"Type of schema\">type</a><a name=\"VIDISMedicationSchema.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Type of schema</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.author\" title=\"Unique identifier of the person who is responsible for the information content. Should be an NISS or BIS number\">author</a><a name=\"VIDISMedicationSchema.author\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-II.html\" title=\"Element\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Who recorded the entry</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.authoredDate\" title=\"date/time when entered\">authoredDate</a><a name=\"VIDISMedicationSchema.authoredDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-DT.html\" title=\"Element\">DT</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">date/time when entered</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.patient\" title=\"Identifier or reference to the patient. Should be an NISS or BIS number\">patient</a><a name=\"VIDISMedicationSchema.patient\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-II.html\" title=\"Element\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identifier or reference to the patient</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine\" title=\"A line of medication\">medicationLine</a><a name=\"VIDISMedicationSchema.medicationLine\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-class.html\" title=\"BackboneElement\">class</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">A line of medication<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.uniqueID\" title=\"A unique identifier of the line, including the namespace\">uniqueID</a><a name=\"VIDISMedicationSchema.medicationLine.uniqueID\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-II.html\" title=\"Element\">II</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">A unique identifier of the line<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.status\" title=\"The status of the medication treatment entry - active, stopped, entered in error, etc.\">status</a><a name=\"VIDISMedicationSchema.medicationLine.status\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The status of the medication treatment entry - active, stopped, entered in error, etc.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.lifeCycleStatus\" title=\"The business state of the treatment - active, stopped, etc.\">lifeCycleStatus</a><a name=\"VIDISMedicationSchema.medicationLine.lifeCycleStatus\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The business state of the treatment - active, stopped, etc.<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-BEVSMMedicationLineStatus.html\">Medication line - Treatment status</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\">preferred</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.statusReason\" title=\"Reason for the medication being in the status - e.g. why not taken, why suspended...\">statusReason</a><a name=\"VIDISMedicationSchema.medicationLine.statusReason\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reason for the medication being in the status<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-BEVSMMedicationLineStatusReason.html\">Medication line - Treatment status reason</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\">preferred</a>)<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.recorder\" title=\"Who recorded the entry\">recorder</a><a name=\"VIDISMedicationSchema.medicationLine.recorder\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Who recorded the entry</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.recordedDate\" title=\"date/time when entered\">recordedDate</a><a name=\"VIDISMedicationSchema.medicationLine.recordedDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-DT.html\" title=\"Element\">DT</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">date/time when entered</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.originType\" title=\"Where the treatment originated - hospital, ambulatory,...\">originType</a><a name=\"VIDISMedicationSchema.medicationLine.originType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Where the treatment originated - hospital, ambulatory,...<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-BEVSMedicationLineOriginType.html\">Medication Line origin type</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\">preferred</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.product\" title=\"The medicinal product\">product</a><a name=\"VIDISMedicationSchema.medicationLine.product\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-class.html\" title=\"BackboneElement\">class</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The medicinal product</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.product.productCode\" title=\"The code of the product, including the type (VMP, CNK, CTIX)\">productCode</a><a name=\"VIDISMedicationSchema.medicationLine.product.productCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The code of the product, including the type (VMP, CNK, CTIX)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.product.productClass\" title=\"The classification of the product e.g. ATC\">productClass</a><a name=\"VIDISMedicationSchema.medicationLine.product.productClass\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The classification of the product e.g. ATC</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.product.product\" title=\"Reference to the defined medication\">product</a><a name=\"VIDISMedicationSchema.medicationLine.product.product\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-class.html\" title=\"BackboneElement\">class</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reference to the defined medication</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.product.medType\" title=\"The type of medication\">medType</a><a name=\"VIDISMedicationSchema.medicationLine.product.medType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The type of medication<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-BEVSMedicationProductType.html\">Medication Product Type</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\">preferred</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.treatmentTime\" title=\"When the treatment is expected to occur\">treatmentTime</a><a name=\"VIDISMedicationSchema.medicationLine.treatmentTime\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-class.html\" title=\"BackboneElement\">class</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">When the treatment is expected to occur</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0111.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.treatmentTime.period\" title=\"The date and time the treatment started/stopped\">period</a><a name=\"VIDISMedicationSchema.medicationLine.treatmentTime.period\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-class.html\" title=\"BackboneElement\">class</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The date and time the treatment started/stopped</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.treatmentTime.period.startDate\" title=\"The date and time the treatment started\">startDate</a><a name=\"VIDISMedicationSchema.medicationLine.treatmentTime.period.startDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-DT.html\" title=\"Element\">DT</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The date and time the treatment started</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.treatmentTime.period.endDate\" title=\"The date and time the treatment stopped\">endDate</a><a name=\"VIDISMedicationSchema.medicationLine.treatmentTime.period.endDate\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-DT.html\" title=\"Element\">DT</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The date and time the treatment stopped</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.treatmentTime.duration\" title=\"Duration if exact start/end is not known\">duration</a><a name=\"VIDISMedicationSchema.medicationLine.treatmentTime.duration\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ST.html\" title=\"Element\">ST</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Duration if exact start/end is not known</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.relatedCondition\" title=\"The condition that triggered this treatment\">relatedCondition</a><a name=\"VIDISMedicationSchema.medicationLine.relatedCondition\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-class.html\" title=\"BackboneElement\">class</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The condition that triggered this treatment<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.relatedCondition.conditionCode\" title=\"The type of condition that triggered this treatment\">conditionCode</a><a name=\"VIDISMedicationSchema.medicationLine.relatedCondition.conditionCode\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The type of condition that triggered this treatment</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.relatedCondition.conditionReference\" title=\"Reference to the condition defined elsewhere\">conditionReference</a><a name=\"VIDISMedicationSchema.medicationLine.relatedCondition.conditionReference\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-class.html\" title=\"BackboneElement\">class</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reference to the condition defined elsewhere<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.periodicity\" title=\"Frequency of treatment\">periodicity</a><a name=\"VIDISMedicationSchema.medicationLine.periodicity\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Frequency of treatment<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-BEVSMMedicationLinePeriodicity.html\">Medication line - periodicity</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\">preferred</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.dosageAmount\" title=\"The dosage amount - number of units to take\">dosageAmount</a><a name=\"VIDISMedicationSchema.medicationLine.dosageAmount\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-QT.html\" title=\"Element\">QT</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The dosage amount - number of units to take</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.dayPeriod\" title=\"The time of day When the medication is given\">dayPeriod</a><a name=\"VIDISMedicationSchema.medicationLine.dayPeriod\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The time of day When the medication is given<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-BEVSMMedicationLineDayPeriod.html\">Medication line - time of day</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\">preferred</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.route\" title=\"The route of administration\">route</a><a name=\"VIDISMedicationSchema.medicationLine.route\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The route of administration<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-BEVSMedicationAdministrationRoute.html\">Medication line - route of administration</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\">preferred</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.instruction\" title=\"Instruction for the patient\">instruction</a><a name=\"VIDISMedicationSchema.medicationLine.instruction\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ST.html\" title=\"Element\">ST</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Instruction for the patient<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.note\" title=\"Other annotations\">note</a><a name=\"VIDISMedicationSchema.medicationLine.note\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ST.html\" title=\"Element\">ST</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Other annotations<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.reaction\" title=\"Reactions to the medication during this treatment\">reaction</a><a name=\"VIDISMedicationSchema.medicationLine.reaction\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-class.html\" title=\"BackboneElement\">class</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Reactions to the medication during this treatment<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.reaction.date\" title=\"The date of the reaction\">date</a><a name=\"VIDISMedicationSchema.medicationLine.reaction.date\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-DT.html\" title=\"Element\">DT</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The date of the reaction</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.reaction.type\" title=\"The reaction code or text\">type</a><a name=\"VIDISMedicationSchema.medicationLine.reaction.type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The reaction code or text</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.indication\" title=\"Indications / conditions for which this medication is given\">indication</a><a name=\"VIDISMedicationSchema.medicationLine.indication\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indications / conditions for which this medication is given<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-VIDISMedicationSchema-definitions.html#VIDISMedicationSchema.medicationLine.permission-consent\" title=\"Any additional indication of privacy and consent that is explicitly given for this line\">permission-consent</a><a name=\"VIDISMedicationSchema.medicationLine.permission-consent\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-CD.html\" title=\"Element\">CD</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Any additional indication of privacy and consent that is explicitly given for this line<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-BEVSMedicationLineConsent.html\">Medication Line consent</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#preferred\" title=\"Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant.\">preferred</a>)</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "http://example.com/fhir/example/StructureDefinition/VIDISMedicationSchema",
+  "version" : "1.0.0",
+  "name" : "VIDISMedicationSchema",
+  "title" : "VIDIS MS",
+  "status" : "active",
+  "date" : "2023-03-05T16:02:38+00:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "VIDIS MedicationSchema Data Model",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "056",
+      "display" : "Belgium"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://example.com/fhir/example/StructureDefinition/VIDISMedicationSchema",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "element" : [{
+      "id" : "VIDISMedicationSchema",
+      "path" : "VIDISMedicationSchema",
+      "short" : "VIDIS MS",
+      "definition" : "VIDIS MedicationSchema Data Model",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "VIDISMedicationSchema.identifier",
+      "path" : "VIDISMedicationSchema.identifier",
+      "short" : "Identifier of the schema",
+      "definition" : "Unique identifier for the schema",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "VIDISMedicationSchema.identifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/II"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.version",
+      "path" : "VIDISMedicationSchema.version",
+      "short" : "Unique version identifier for the schema",
+      "definition" : "Unique version identifier for the schema",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.version",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/II"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.type",
+      "path" : "VIDISMedicationSchema.type",
+      "short" : "Type of schema",
+      "definition" : "Type of schema",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.type",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.author",
+      "path" : "VIDISMedicationSchema.author",
+      "short" : "Who recorded the entry",
+      "definition" : "Unique identifier of the person who is responsible for the information content. Should be an NISS or BIS number",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.author",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/II"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.authoredDate",
+      "path" : "VIDISMedicationSchema.authoredDate",
+      "short" : "date/time when entered",
+      "definition" : "date/time when entered",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.authoredDate",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/DT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.patient",
+      "path" : "VIDISMedicationSchema.patient",
+      "short" : "Identifier or reference to the patient",
+      "definition" : "Identifier or reference to the patient. Should be an NISS or BIS number",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.patient",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/II"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine",
+      "path" : "VIDISMedicationSchema.medicationLine",
+      "short" : "A line of medication",
+      "definition" : "A line of medication",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.id",
+      "path" : "VIDISMedicationSchema.medicationLine.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.extension",
+      "path" : "VIDISMedicationSchema.medicationLine.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.modifierExtension",
+      "path" : "VIDISMedicationSchema.medicationLine.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.uniqueID",
+      "path" : "VIDISMedicationSchema.medicationLine.uniqueID",
+      "short" : "A unique identifier of the line",
+      "definition" : "A unique identifier of the line, including the namespace",
+      "min" : 1,
+      "max" : "*",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.uniqueID",
+        "min" : 1,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/II"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.status",
+      "path" : "VIDISMedicationSchema.medicationLine.status",
+      "short" : "The status of the medication treatment entry - active, stopped, entered in error, etc.",
+      "definition" : "The status of the medication treatment entry - active, stopped, entered in error, etc.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.status",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.lifeCycleStatus",
+      "path" : "VIDISMedicationSchema.medicationLine.lifeCycleStatus",
+      "short" : "The business state of the treatment - active, stopped, etc.",
+      "definition" : "The business state of the treatment - active, stopped, etc.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.lifeCycleStatus",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatus"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.statusReason",
+      "path" : "VIDISMedicationSchema.medicationLine.statusReason",
+      "short" : "Reason for the medication being in the status",
+      "definition" : "Reason for the medication being in the status - e.g. why not taken, why suspended...",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.statusReason",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatusReason"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.recorder",
+      "path" : "VIDISMedicationSchema.medicationLine.recorder",
+      "short" : "Who recorded the entry",
+      "definition" : "Who recorded the entry",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.recorder",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.recordedDate",
+      "path" : "VIDISMedicationSchema.medicationLine.recordedDate",
+      "short" : "date/time when entered",
+      "definition" : "date/time when entered",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.recordedDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/DT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.originType",
+      "path" : "VIDISMedicationSchema.medicationLine.originType",
+      "short" : "Where the treatment originated - hospital, ambulatory,...",
+      "definition" : "Where the treatment originated - hospital, ambulatory,...",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.originType",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMedicationLineOriginType"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product",
+      "path" : "VIDISMedicationSchema.medicationLine.product",
+      "short" : "The medicinal product",
+      "definition" : "The medicinal product",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.product",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product.id",
+      "path" : "VIDISMedicationSchema.medicationLine.product.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product.extension",
+      "path" : "VIDISMedicationSchema.medicationLine.product.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product.modifierExtension",
+      "path" : "VIDISMedicationSchema.medicationLine.product.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product.productCode",
+      "path" : "VIDISMedicationSchema.medicationLine.product.productCode",
+      "short" : "The code of the product, including the type (VMP, CNK, CTIX)",
+      "definition" : "The code of the product, including the type (VMP, CNK, CTIX)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.product.productCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product.productClass",
+      "path" : "VIDISMedicationSchema.medicationLine.product.productClass",
+      "short" : "The classification of the product e.g. ATC",
+      "definition" : "The classification of the product e.g. ATC",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.product.productClass",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product.product",
+      "path" : "VIDISMedicationSchema.medicationLine.product.product",
+      "short" : "Reference to the defined medication",
+      "definition" : "Reference to the defined medication",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.product.product",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product.medType",
+      "path" : "VIDISMedicationSchema.medicationLine.product.medType",
+      "short" : "The type of medication",
+      "definition" : "The type of medication",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.product.medType",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMedicationProductType"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime",
+      "short" : "When the treatment is expected to occur",
+      "definition" : "When the treatment is expected to occur",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.treatmentTime",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.id",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.extension",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.modifierExtension",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.period",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period",
+      "short" : "The date and time the treatment started/stopped",
+      "definition" : "The date and time the treatment started/stopped",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.id",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.extension",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.modifierExtension",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.startDate",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.startDate",
+      "short" : "The date and time the treatment started",
+      "definition" : "The date and time the treatment started",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.startDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/DT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.endDate",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.endDate",
+      "short" : "The date and time the treatment stopped",
+      "definition" : "The date and time the treatment stopped",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.endDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/DT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.duration",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.duration",
+      "short" : "Duration if exact start/end is not known",
+      "definition" : "Duration if exact start/end is not known",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.duration",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/ST"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.relatedCondition",
+      "path" : "VIDISMedicationSchema.medicationLine.relatedCondition",
+      "short" : "The condition that triggered this treatment",
+      "definition" : "The condition that triggered this treatment",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.relatedCondition",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.relatedCondition.id",
+      "path" : "VIDISMedicationSchema.medicationLine.relatedCondition.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.relatedCondition.extension",
+      "path" : "VIDISMedicationSchema.medicationLine.relatedCondition.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.relatedCondition.modifierExtension",
+      "path" : "VIDISMedicationSchema.medicationLine.relatedCondition.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.relatedCondition.conditionCode",
+      "path" : "VIDISMedicationSchema.medicationLine.relatedCondition.conditionCode",
+      "short" : "The type of condition that triggered this treatment",
+      "definition" : "The type of condition that triggered this treatment",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.relatedCondition.conditionCode",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.relatedCondition.conditionReference",
+      "path" : "VIDISMedicationSchema.medicationLine.relatedCondition.conditionReference",
+      "short" : "Reference to the condition defined elsewhere",
+      "definition" : "Reference to the condition defined elsewhere",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.relatedCondition.conditionReference",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.periodicity",
+      "path" : "VIDISMedicationSchema.medicationLine.periodicity",
+      "short" : "Frequency of treatment",
+      "definition" : "Frequency of treatment",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.periodicity",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLinePeriodicity"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.dosageAmount",
+      "path" : "VIDISMedicationSchema.medicationLine.dosageAmount",
+      "short" : "The dosage amount - number of units to take",
+      "definition" : "The dosage amount - number of units to take",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.dosageAmount",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/QT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.dayPeriod",
+      "path" : "VIDISMedicationSchema.medicationLine.dayPeriod",
+      "short" : "The time of day When the medication is given",
+      "definition" : "The time of day When the medication is given",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.dayPeriod",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineDayPeriod"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.route",
+      "path" : "VIDISMedicationSchema.medicationLine.route",
+      "short" : "The route of administration",
+      "definition" : "The route of administration",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.route",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMedicationAdministrationRoute"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.instruction",
+      "path" : "VIDISMedicationSchema.medicationLine.instruction",
+      "short" : "Instruction for the patient",
+      "definition" : "Instruction for the patient",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.instruction",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/ST"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.note",
+      "path" : "VIDISMedicationSchema.medicationLine.note",
+      "short" : "Other annotations",
+      "definition" : "Other annotations",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.note",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/ST"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.reaction",
+      "path" : "VIDISMedicationSchema.medicationLine.reaction",
+      "short" : "Reactions to the medication during this treatment",
+      "definition" : "Reactions to the medication during this treatment",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.reaction",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.reaction.id",
+      "path" : "VIDISMedicationSchema.medicationLine.reaction.id",
+      "representation" : ["xmlAttr"],
+      "short" : "Unique id for inter-element referencing",
+      "definition" : "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "Element.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+          "valueUrl" : "string"
+        }],
+        "code" : "http://hl7.org/fhirpath/System.String"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.reaction.extension",
+      "path" : "VIDISMedicationSchema.medicationLine.reaction.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "description" : "Extensions are always sliced by (at least) url",
+        "rules" : "open"
+      },
+      "short" : "Additional content defined by implementations",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "alias" : ["extensions",
+      "user content"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Element.extension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : false,
+      "isSummary" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.reaction.modifierExtension",
+      "path" : "VIDISMedicationSchema.medicationLine.reaction.modifierExtension",
+      "short" : "Extensions that cannot be ignored even if unrecognized",
+      "definition" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+      "requirements" : "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).",
+      "alias" : ["extensions",
+      "user content",
+      "modifiers"],
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "BackboneElement.modifierExtension",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Extension"
+      }],
+      "constraint" : [{
+        "key" : "ele-1",
+        "severity" : "error",
+        "human" : "All FHIR elements must have a @value or children",
+        "expression" : "hasValue() or (children().count() > id.count())",
+        "xpath" : "@value|f:*|h:div",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
+      },
+      {
+        "key" : "ext-1",
+        "severity" : "error",
+        "human" : "Must have either extensions or value[x], not both",
+        "expression" : "extension.exists() != value.exists()",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+      }],
+      "isModifier" : true,
+      "isModifierReason" : "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them",
+      "isSummary" : true,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.reaction.date",
+      "path" : "VIDISMedicationSchema.medicationLine.reaction.date",
+      "short" : "The date of the reaction",
+      "definition" : "The date of the reaction",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.reaction.date",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/DT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.reaction.type",
+      "path" : "VIDISMedicationSchema.medicationLine.reaction.type",
+      "short" : "The reaction code or text",
+      "definition" : "The reaction code or text",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.reaction.type",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.indication",
+      "path" : "VIDISMedicationSchema.medicationLine.indication",
+      "short" : "Indications / conditions for which this medication is given",
+      "definition" : "Indications / conditions for which this medication is given",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.indication",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.permission-consent",
+      "path" : "VIDISMedicationSchema.medicationLine.permission-consent",
+      "short" : "Any additional indication of privacy and consent that is explicitly given for this line",
+      "definition" : "Any additional indication of privacy and consent that is explicitly given for this line",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "VIDISMedicationSchema.medicationLine.permission-consent",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMedicationLineConsent"
+      }
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "VIDISMedicationSchema",
+      "path" : "VIDISMedicationSchema",
+      "short" : "VIDIS MS",
+      "definition" : "VIDIS MedicationSchema Data Model"
+    },
+    {
+      "id" : "VIDISMedicationSchema.identifier",
+      "path" : "VIDISMedicationSchema.identifier",
+      "short" : "Identifier of the schema",
+      "definition" : "Unique identifier for the schema",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/II"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.version",
+      "path" : "VIDISMedicationSchema.version",
+      "short" : "Unique version identifier for the schema",
+      "definition" : "Unique version identifier for the schema",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/II"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.type",
+      "path" : "VIDISMedicationSchema.type",
+      "short" : "Type of schema",
+      "definition" : "Type of schema",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.author",
+      "path" : "VIDISMedicationSchema.author",
+      "short" : "Who recorded the entry",
+      "definition" : "Unique identifier of the person who is responsible for the information content. Should be an NISS or BIS number",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/II"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.authoredDate",
+      "path" : "VIDISMedicationSchema.authoredDate",
+      "short" : "date/time when entered",
+      "definition" : "date/time when entered",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/DT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.patient",
+      "path" : "VIDISMedicationSchema.patient",
+      "short" : "Identifier or reference to the patient",
+      "definition" : "Identifier or reference to the patient. Should be an NISS or BIS number",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/II"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine",
+      "path" : "VIDISMedicationSchema.medicationLine",
+      "short" : "A line of medication",
+      "definition" : "A line of medication",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.uniqueID",
+      "path" : "VIDISMedicationSchema.medicationLine.uniqueID",
+      "short" : "A unique identifier of the line",
+      "definition" : "A unique identifier of the line, including the namespace",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/II"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.status",
+      "path" : "VIDISMedicationSchema.medicationLine.status",
+      "short" : "The status of the medication treatment entry - active, stopped, entered in error, etc.",
+      "definition" : "The status of the medication treatment entry - active, stopped, entered in error, etc.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.lifeCycleStatus",
+      "path" : "VIDISMedicationSchema.medicationLine.lifeCycleStatus",
+      "short" : "The business state of the treatment - active, stopped, etc.",
+      "definition" : "The business state of the treatment - active, stopped, etc.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatus"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.statusReason",
+      "path" : "VIDISMedicationSchema.medicationLine.statusReason",
+      "short" : "Reason for the medication being in the status",
+      "definition" : "Reason for the medication being in the status - e.g. why not taken, why suspended...",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatusReason"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.recorder",
+      "path" : "VIDISMedicationSchema.medicationLine.recorder",
+      "short" : "Who recorded the entry",
+      "definition" : "Who recorded the entry",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.recordedDate",
+      "path" : "VIDISMedicationSchema.medicationLine.recordedDate",
+      "short" : "date/time when entered",
+      "definition" : "date/time when entered",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/DT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.originType",
+      "path" : "VIDISMedicationSchema.medicationLine.originType",
+      "short" : "Where the treatment originated - hospital, ambulatory,...",
+      "definition" : "Where the treatment originated - hospital, ambulatory,...",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMedicationLineOriginType"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product",
+      "path" : "VIDISMedicationSchema.medicationLine.product",
+      "short" : "The medicinal product",
+      "definition" : "The medicinal product",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product.productCode",
+      "path" : "VIDISMedicationSchema.medicationLine.product.productCode",
+      "short" : "The code of the product, including the type (VMP, CNK, CTIX)",
+      "definition" : "The code of the product, including the type (VMP, CNK, CTIX)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product.productClass",
+      "path" : "VIDISMedicationSchema.medicationLine.product.productClass",
+      "short" : "The classification of the product e.g. ATC",
+      "definition" : "The classification of the product e.g. ATC",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product.product",
+      "path" : "VIDISMedicationSchema.medicationLine.product.product",
+      "short" : "Reference to the defined medication",
+      "definition" : "Reference to the defined medication",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.product.medType",
+      "path" : "VIDISMedicationSchema.medicationLine.product.medType",
+      "short" : "The type of medication",
+      "definition" : "The type of medication",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMedicationProductType"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime",
+      "short" : "When the treatment is expected to occur",
+      "definition" : "When the treatment is expected to occur",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.period",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period",
+      "short" : "The date and time the treatment started/stopped",
+      "definition" : "The date and time the treatment started/stopped",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.startDate",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.startDate",
+      "short" : "The date and time the treatment started",
+      "definition" : "The date and time the treatment started",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/DT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.endDate",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.period.endDate",
+      "short" : "The date and time the treatment stopped",
+      "definition" : "The date and time the treatment stopped",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/DT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.treatmentTime.duration",
+      "path" : "VIDISMedicationSchema.medicationLine.treatmentTime.duration",
+      "short" : "Duration if exact start/end is not known",
+      "definition" : "Duration if exact start/end is not known",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/ST"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.relatedCondition",
+      "path" : "VIDISMedicationSchema.medicationLine.relatedCondition",
+      "short" : "The condition that triggered this treatment",
+      "definition" : "The condition that triggered this treatment",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.relatedCondition.conditionCode",
+      "path" : "VIDISMedicationSchema.medicationLine.relatedCondition.conditionCode",
+      "short" : "The type of condition that triggered this treatment",
+      "definition" : "The type of condition that triggered this treatment",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.relatedCondition.conditionReference",
+      "path" : "VIDISMedicationSchema.medicationLine.relatedCondition.conditionReference",
+      "short" : "Reference to the condition defined elsewhere",
+      "definition" : "Reference to the condition defined elsewhere",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.periodicity",
+      "path" : "VIDISMedicationSchema.medicationLine.periodicity",
+      "short" : "Frequency of treatment",
+      "definition" : "Frequency of treatment",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLinePeriodicity"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.dosageAmount",
+      "path" : "VIDISMedicationSchema.medicationLine.dosageAmount",
+      "short" : "The dosage amount - number of units to take",
+      "definition" : "The dosage amount - number of units to take",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/QT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.dayPeriod",
+      "path" : "VIDISMedicationSchema.medicationLine.dayPeriod",
+      "short" : "The time of day When the medication is given",
+      "definition" : "The time of day When the medication is given",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineDayPeriod"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.route",
+      "path" : "VIDISMedicationSchema.medicationLine.route",
+      "short" : "The route of administration",
+      "definition" : "The route of administration",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMedicationAdministrationRoute"
+      }
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.instruction",
+      "path" : "VIDISMedicationSchema.medicationLine.instruction",
+      "short" : "Instruction for the patient",
+      "definition" : "Instruction for the patient",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/ST"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.note",
+      "path" : "VIDISMedicationSchema.medicationLine.note",
+      "short" : "Other annotations",
+      "definition" : "Other annotations",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/ST"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.reaction",
+      "path" : "VIDISMedicationSchema.medicationLine.reaction",
+      "short" : "Reactions to the medication during this treatment",
+      "definition" : "Reactions to the medication during this treatment",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/class"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.reaction.date",
+      "path" : "VIDISMedicationSchema.medicationLine.reaction.date",
+      "short" : "The date of the reaction",
+      "definition" : "The date of the reaction",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/DT"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.reaction.type",
+      "path" : "VIDISMedicationSchema.medicationLine.reaction.type",
+      "short" : "The reaction code or text",
+      "definition" : "The reaction code or text",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.indication",
+      "path" : "VIDISMedicationSchema.medicationLine.indication",
+      "short" : "Indications / conditions for which this medication is given",
+      "definition" : "Indications / conditions for which this medication is given",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }]
+    },
+    {
+      "id" : "VIDISMedicationSchema.medicationLine.permission-consent",
+      "path" : "VIDISMedicationSchema.medicationLine.permission-consent",
+      "short" : "Any additional indication of privacy and consent that is explicitly given for this line",
+      "definition" : "Any additional indication of privacy and consent that is explicitly given for this line",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Element",
+        "profile" : ["http://example.com/fhir/example/StructureDefinition/CD"]
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "http://example.com/fhir/example/ValueSet/BEVSMedicationLineConsent"
+      }
+    }]
+  }
+}
