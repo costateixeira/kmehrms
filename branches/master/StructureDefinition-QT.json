@@ -9,7 +9,7 @@
   "version" : "1.0.0",
   "name" : "QT",
   "status" : "active",
-  "date" : "2023-03-01T12:58:58+00:00",
+  "date" : "2023-03-05T16:02:38+00:00",
   "publisher" : "My Organization",
   "contact" : [{
     "name" : "My Organization",
@@ -34,8 +34,8 @@
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "001",
-      "display" : "World"
+      "code" : "056",
+      "display" : "Belgium"
     }]
   }],
   "fhirVersion" : "4.0.1",

@@ -1,8 +1,573 @@
 {
   "resourceType" : "Bundle",
-  "id" : "cf33f216-9505-46b5-ae10-4011c59455e1",
+  "id" : "7b0a6657-5ed4-45b6-86ce-9fa331e38c8d",
   "meta" : {
-    "lastUpdated" : "2023-03-01T12:58:58.068+00:00"
+    "lastUpdated" : "2023-03-05T16:02:38.540+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/BEVSMedicationAdministrationRoute",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "BEVSMedicationAdministrationRoute",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-BEMedicationAdministrationRoute.html\">Medication line - route of administration v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/BEVSMedicationAdministrationRoute",
+      "version" : "1.0.0",
+      "name" : "BEVSMedicationAdministrationRoute",
+      "title" : "Medication line - route of administration",
+      "status" : "active",
+      "date" : "2023-03-05T16:02:38+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Medication line - route of administration.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:68f8442a-7723-4b83-96ec-af8b7b7309bb",
+        "timestamp" : "2023-03-05T16:02:56+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.com/fhir/example/CodeSystem/BEMedicationAdministrationRoute|1.0.0"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/BEVSMedicationProductType",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "BEVSMedicationProductType",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 9 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-BEMedicationProductType.html\">Medication Product Type v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationProductType-magistral\"> </a>  <a href=\"CodeSystem-BEMedicationProductType.html#BEMedicationProductType-magistral\">magistral</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationProductType</td><td>Magistral preparation</td><td><div><p>Magistral preparation - see definitions</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationProductType-officinal\"> </a>  <a href=\"CodeSystem-BEMedicationProductType.html#BEMedicationProductType-officinal\">officinal</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationProductType</td><td>Oficinal preparation</td><td><div><p>Oficinal preparation - see definitions</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationProductType-medicinalproduct\"> </a>  <a href=\"CodeSystem-BEMedicationProductType.html#BEMedicationProductType-medicinalproduct\">medicinalproduct</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationProductType</td><td>Medicinal product</td><td><div><p>Medicinal product - an actual 'branded' product</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationProductType-idmp-mp\"> </a>  <a href=\"CodeSystem-BEMedicationProductType.html#BEMedicationProductType-idmp-mp\">idmp-mp</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationProductType</td><td>IDMP Medicinal Product</td><td><div><p>IDMP Medicinal Product - see definitions</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationProductType-pharmaceuticalproduct\"> </a>  <a href=\"CodeSystem-BEMedicationProductType.html#BEMedicationProductType-pharmaceuticalproduct\">pharmaceuticalproduct</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationProductType</td><td>medicinal product - see definitions</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationProductType-idmp-php\"> </a>  <a href=\"CodeSystem-BEMedicationProductType.html#BEMedicationProductType-idmp-php\">idmp-php</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationProductType</td><td>IDMP Pharmaceutical Product</td><td><div><p>IDMP Pharmaceutical Product - see definitions</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationProductType-package\"> </a>  <a href=\"CodeSystem-BEMedicationProductType.html#BEMedicationProductType-package\">package</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationProductType</td><td>product package</td><td><div><p>product package - see definitions</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationProductType-idmp-pp\"> </a>  <a href=\"CodeSystem-BEMedicationProductType.html#BEMedicationProductType-idmp-pp\">idmp-pp</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationProductType</td><td>IDMP Packaged Product</td><td><div><p>IDMP Packaged Product - see definitions</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationProductType-vmp-group\"> </a>  <a href=\"CodeSystem-BEMedicationProductType.html#BEMedicationProductType-vmp-group\">vmp-group</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationProductType</td><td>VMP Group</td><td><div><p>VMP Group - see definitions</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/BEVSMedicationProductType",
+      "version" : "1.0.0",
+      "name" : "BEVSMedicationProductType",
+      "title" : "Medication Product Type",
+      "status" : "active",
+      "date" : "2023-03-05T16:02:38+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Medication Product Type.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9eee3ffb-c9db-4a18-9a75-1e12deef39d3",
+        "timestamp" : "2023-03-05T16:02:58+00:00",
+        "total" : 9,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.com/fhir/example/CodeSystem/BEMedicationProductType|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationProductType",
+          "code" : "magistral",
+          "display" : "Magistral preparation"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationProductType",
+          "code" : "officinal",
+          "display" : "Oficinal preparation"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationProductType",
+          "code" : "medicinalproduct",
+          "display" : "Medicinal product"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationProductType",
+          "code" : "idmp-mp",
+          "display" : "IDMP Medicinal Product"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationProductType",
+          "code" : "pharmaceuticalproduct",
+          "display" : "medicinal product - see definitions"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationProductType",
+          "code" : "idmp-php",
+          "display" : "IDMP Pharmaceutical Product"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationProductType",
+          "code" : "package",
+          "display" : "product package"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationProductType",
+          "code" : "idmp-pp",
+          "display" : "IDMP Packaged Product"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationProductType",
+          "code" : "vmp-group",
+          "display" : "VMP Group"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLinePeriodicity",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "BEVSMMedicationLinePeriodicity",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-BEMedicationLinePeriodicity.html\">Medication line - periodicity v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLinePeriodicity-planned\"> </a>  <a href=\"CodeSystem-BEMedicationLinePeriodicity.html#BEMedicationLinePeriodicity-planned\">planned</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLinePeriodicity</td><td>Planned</td><td><div><p>Medication is/was planned to be taken</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLinePeriodicity",
+      "version" : "1.0.0",
+      "name" : "BEVSMMedicationLinePeriodicity",
+      "title" : "Medication line - periodicity",
+      "status" : "active",
+      "date" : "2023-03-05T16:02:38+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Medication line - periodicity.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f19e2a19-7f51-4e06-aab3-13c0e24e404c",
+        "timestamp" : "2023-03-05T16:03:07+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.com/fhir/example/CodeSystem/BEMedicationLinePeriodicity|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLinePeriodicity",
+          "code" : "planned",
+          "display" : "Planned"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/BEVSMedicationLineOriginType",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "BEVSMedicationLineOriginType",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-BEMedicationLineOriginType.html\">Medication Line origin type v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineOriginType-amb-presc\"> </a>  <a href=\"CodeSystem-BEMedicationLineOriginType.html#BEMedicationLineOriginType-amb-presc\">amb-presc</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType</td><td>Ambulatory Prescription</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineOriginType-hosp-presc\"> </a>  <a href=\"CodeSystem-BEMedicationLineOriginType.html#BEMedicationLineOriginType-hosp-presc\">hosp-presc</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType</td><td>Hospital Prescription</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineOriginType-self-medication\"> </a>  <a href=\"CodeSystem-BEMedicationLineOriginType.html#BEMedicationLineOriginType-self-medication\">self-medication</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType</td><td>Self-medication</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineOriginType-pharm-advice\"> </a>  <a href=\"CodeSystem-BEMedicationLineOriginType.html#BEMedicationLineOriginType-pharm-advice\">pharm-advice</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType</td><td>Upon pharmaceutical advice</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineOriginType-extra-formulary-prescription\"> </a>  <a href=\"CodeSystem-BEMedicationLineOriginType.html#BEMedicationLineOriginType-extra-formulary-prescription\">extra-formulary-prescription</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType</td><td>Medication not sold in Belgium, with prescription</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineOriginType-extra-formulary-otc\"> </a>  <a href=\"CodeSystem-BEMedicationLineOriginType.html#BEMedicationLineOriginType-extra-formulary-otc\">extra-formulary-otc</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType</td><td>Medication not sold in Belgium, without prescription</td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/BEVSMedicationLineOriginType",
+      "version" : "1.0.0",
+      "name" : "BEVSMedicationLineOriginType",
+      "title" : "Medication Line origin type",
+      "status" : "active",
+      "date" : "2023-03-05T16:02:38+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Medication Line origin type Type.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c297555c-6e2c-46ca-a111-4ff08a1c7761",
+        "timestamp" : "2023-03-05T16:03:11+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType",
+          "code" : "amb-presc",
+          "display" : "Ambulatory Prescription"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType",
+          "code" : "hosp-presc",
+          "display" : "Hospital Prescription"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType",
+          "code" : "self-medication",
+          "display" : "Self-medication"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType",
+          "code" : "pharm-advice",
+          "display" : "Upon pharmaceutical advice"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType",
+          "code" : "extra-formulary-prescription",
+          "display" : "Medication not sold in Belgium, with prescription"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType",
+          "code" : "extra-formulary-otc",
+          "display" : "Medication not sold in Belgium, without prescription"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatusReason",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "BEVSMMedicationLineStatusReason",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-BEMedicationLineStatusReason.html\">Medication line - Treatment status v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatusReason-planned\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatusReason.html#BEMedicationLineStatusReason-planned\">planned</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason</td><td>Planned</td><td><div><p>Medication is/was planned to be taken</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatusReason-ordered\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatusReason.html#BEMedicationLineStatusReason-ordered\">ordered</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason</td><td>Ordered</td><td><div><p>Medication is prescribed or ordered</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatusReason-delivered\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatusReason.html#BEMedicationLineStatusReason-delivered\">delivered</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason</td><td>Delivered</td><td><div><p>Medication is delivered but there's no information that the patient has started to take it</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatusReason-ongoing\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatusReason.html#BEMedicationLineStatusReason-ongoing\">ongoing</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason</td><td>Ongoing</td><td><div><p>Medication treatment is ongoing</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatusReason-suspended\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatusReason.html#BEMedicationLineStatusReason-suspended\">suspended</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason</td><td>Suspended</td><td><div><p>Medication treatment is suspended</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatusReason-completed\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatusReason.html#BEMedicationLineStatusReason-completed\">completed</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason</td><td>Completed</td><td><div><p>Medication treatment is completed</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatusReason-stopped\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatusReason.html#BEMedicationLineStatusReason-stopped\">stopped</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason</td><td>Stopped</td><td><div><p>Medication treatment is stopped before being completed</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatusReason",
+      "version" : "1.0.0",
+      "name" : "BEVSMMedicationLineStatusReason",
+      "title" : "Medication line - Treatment status reason",
+      "status" : "active",
+      "date" : "2023-03-05T16:02:38+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Medication line - Treatment status reason.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:a12baf21-48f6-4d79-9d0d-2be5fa8e1843",
+        "timestamp" : "2023-03-05T16:03:12+00:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason",
+          "code" : "planned",
+          "display" : "Planned"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason",
+          "code" : "ordered",
+          "display" : "Ordered"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason",
+          "code" : "delivered",
+          "display" : "Delivered"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason",
+          "code" : "ongoing",
+          "display" : "Ongoing"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason",
+          "code" : "suspended",
+          "display" : "Suspended"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason",
+          "code" : "completed",
+          "display" : "Completed"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason",
+          "code" : "stopped",
+          "display" : "Stopped"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatus",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "BEVSMMedicationLineStatus",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-BEMedicationLineStatus.html\">Medication Product Type v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatus-planned\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatus.html#BEMedicationLineStatus-planned\">planned</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus</td><td>Planned</td><td><div><p>Medication is/was planned to be taken</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatus-ordered\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatus.html#BEMedicationLineStatus-ordered\">ordered</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus</td><td>Ordered</td><td><div><p>Medication is prescribed or ordered</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatus-delivered\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatus.html#BEMedicationLineStatus-delivered\">delivered</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus</td><td>Delivered</td><td><div><p>Medication is delivered but there's no information that the patient has started to take it</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatus-ongoing\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatus.html#BEMedicationLineStatus-ongoing\">ongoing</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus</td><td>Ongoing</td><td><div><p>Medication treatment is ongoing</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatus-suspended\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatus.html#BEMedicationLineStatus-suspended\">suspended</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus</td><td>Suspended</td><td><div><p>Medication treatment is suspended</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatus-completed\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatus.html#BEMedicationLineStatus-completed\">completed</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus</td><td>Completed</td><td><div><p>Medication treatment is completed</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineStatus-stopped\"> </a>  <a href=\"CodeSystem-BEMedicationLineStatus.html#BEMedicationLineStatus-stopped\">stopped</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus</td><td>Stopped</td><td><div><p>Medication treatment is stopped before being completed</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatus",
+      "version" : "1.0.0",
+      "name" : "BEVSMMedicationLineStatus",
+      "title" : "Medication line - Treatment status",
+      "status" : "active",
+      "date" : "2023-03-05T16:02:38+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Medication line - Treatment status.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:97de5fa0-1e1c-48d0-a54f-49613b62ba5a",
+        "timestamp" : "2023-03-05T16:03:15+00:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus",
+          "code" : "planned",
+          "display" : "Planned"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus",
+          "code" : "ordered",
+          "display" : "Ordered"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus",
+          "code" : "delivered",
+          "display" : "Delivered"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus",
+          "code" : "ongoing",
+          "display" : "Ongoing"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus",
+          "code" : "suspended",
+          "display" : "Suspended"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus",
+          "code" : "completed",
+          "display" : "Completed"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus",
+          "code" : "stopped",
+          "display" : "Stopped"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/example/ValueSet/BEVSMedicationLineConsent",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "BEVSMedicationLineConsent",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-BEMedicationLineConsent.html\">Medication Line consent v1.0.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineConsent-consent\"> </a>  <a href=\"CodeSystem-BEMedicationLineConsent.html#BEMedicationLineConsent-consent\">consent</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineConsent</td><td>Consent</td><td><div><p>Patient consents with sharing the information</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.com-fhir-example-CodeSystem-BEMedicationLineConsent-refuse\"> </a>  <a href=\"CodeSystem-BEMedicationLineConsent.html#BEMedicationLineConsent-refuse\">refuse</a></td><td>http://example.com/fhir/example/CodeSystem/BEMedicationLineConsent</td><td>Refuse</td><td><div><p>Patient doesn't give consent for sharing the information</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/example/ValueSet/BEVSMedicationLineConsent",
+      "version" : "1.0.0",
+      "name" : "BEVSMedicationLineConsent",
+      "title" : "Medication Line consent",
+      "status" : "active",
+      "date" : "2023-03-05T16:02:38+00:00",
+      "publisher" : "My Organization",
+      "contact" : [{
+        "name" : "My Organization",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://example.com/committees"
+        },
+        {
+          "system" : "email",
+          "value" : "my-group@example.com"
+        }]
+      },
+      {
+        "name" : "Bob Smith",
+        "telecom" : [{
+          "system" : "email",
+          "value" : "bobsmith@example.com",
+          "use" : "work"
+        }]
+      }],
+      "description" : "Medication Line consent.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "056",
+          "display" : "Belgium"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:5417175c-d70f-4871-b7a6-0cb641cad7da",
+        "timestamp" : "2023-03-05T16:03:15+00:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineConsent|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineConsent",
+          "code" : "consent",
+          "display" : "Consent"
+        },
+        {
+          "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineConsent",
+          "code" : "refuse",
+          "display" : "Refuse"
+        }]
+      }
+    }
+  }]
 }

@@ -1,6 +1,62 @@
 [
   {
-    "id" : "my-ig",
+    "id" : "BEMedicationAdministrationRoute",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/example/CodeSystem/BEMedicationAdministrationRoute",
+    "version" : "1.0.0",
+    "name" : "BEMedicationAdministrationRoute"
+  },
+  {
+    "id" : "BEMedicationLineConsent",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineConsent",
+    "version" : "1.0.0",
+    "name" : "BEMedicationLineConsent"
+  },
+  {
+    "id" : "BEMedicationLineDayPeriod",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineDayPeriod",
+    "version" : "1.0.0",
+    "name" : "BEMedicationLineDayPeriod"
+  },
+  {
+    "id" : "BEMedicationLineOriginType",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineOriginType",
+    "version" : "1.0.0",
+    "name" : "BEMedicationLineOriginType"
+  },
+  {
+    "id" : "BEMedicationLinePeriodicity",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/example/CodeSystem/BEMedicationLinePeriodicity",
+    "version" : "1.0.0",
+    "name" : "BEMedicationLinePeriodicity"
+  },
+  {
+    "id" : "BEMedicationLineStatus",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatus",
+    "version" : "1.0.0",
+    "name" : "BEMedicationLineStatus"
+  },
+  {
+    "id" : "BEMedicationLineStatusReason",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/example/CodeSystem/BEMedicationLineStatusReason",
+    "version" : "1.0.0",
+    "name" : "BEMedicationLineStatusReason"
+  },
+  {
+    "id" : "BEMedicationProductType",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/example/CodeSystem/BEMedicationProductType",
+    "version" : "1.0.0",
+    "name" : "BEMedicationProductType"
+  },
+  {
+    "id" : "medicationschema",
     "type" : "ImplementationGuide",
     "url" : "http://example.com/fhir/example/ImplementationGuide/my-ig",
     "version" : "1.0.0",
@@ -19,6 +75,27 @@
     "url" : "http://example.com/fhir/example/StructureDefinition/DT",
     "version" : "1.0.0",
     "name" : "DT"
+  },
+  {
+    "id" : "ExtDosageTime",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/ExtDosageTime",
+    "version" : "1.0.0",
+    "name" : "ExtDosageTime"
+  },
+  {
+    "id" : "FHIRDocument",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/FHIRDocument",
+    "version" : "1.0.0",
+    "name" : "FHIRDocument"
+  },
+  {
+    "id" : "FHIRMedList",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/FHIRMedList",
+    "version" : "1.0.0",
+    "name" : "FHIRMedList"
   },
   {
     "id" : "II",
@@ -56,6 +133,27 @@
     "name" : "TS"
   },
   {
+    "id" : "Treatment",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/Treatment",
+    "version" : "1.0.0",
+    "name" : "Treatment"
+  },
+  {
+    "id" : "TreatmentLine",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/TreatmentLine",
+    "version" : "1.0.0",
+    "name" : "TreatmentLine"
+  },
+  {
+    "id" : "VIDISMedicationSchema",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/example/StructureDefinition/VIDISMedicationSchema",
+    "version" : "1.0.0",
+    "name" : "VIDISMedicationSchema"
+  },
+  {
     "id" : "class",
     "type" : "StructureDefinition",
     "url" : "http://example.com/fhir/example/StructureDefinition/class",
@@ -68,5 +166,61 @@
     "url" : "http://example.com/fhir/example/StructureDefinition/unknown",
     "version" : "1.0.0",
     "name" : "unknown"
+  },
+  {
+    "id" : "BEVSMMedicationLineDayPeriod",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineDayPeriod",
+    "version" : "1.0.0",
+    "name" : "BEVSMMedicationLineDayPeriod"
+  },
+  {
+    "id" : "BEVSMMedicationLinePeriodicity",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLinePeriodicity",
+    "version" : "1.0.0",
+    "name" : "BEVSMMedicationLinePeriodicity"
+  },
+  {
+    "id" : "BEVSMMedicationLineStatus",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatus",
+    "version" : "1.0.0",
+    "name" : "BEVSMMedicationLineStatus"
+  },
+  {
+    "id" : "BEVSMMedicationLineStatusReason",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/BEVSMMedicationLineStatusReason",
+    "version" : "1.0.0",
+    "name" : "BEVSMMedicationLineStatusReason"
+  },
+  {
+    "id" : "BEVSMedicationAdministrationRoute",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/BEVSMedicationAdministrationRoute",
+    "version" : "1.0.0",
+    "name" : "BEVSMedicationAdministrationRoute"
+  },
+  {
+    "id" : "BEVSMedicationLineConsent",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/BEVSMedicationLineConsent",
+    "version" : "1.0.0",
+    "name" : "BEVSMedicationLineConsent"
+  },
+  {
+    "id" : "BEVSMedicationLineOriginType",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/BEVSMedicationLineOriginType",
+    "version" : "1.0.0",
+    "name" : "BEVSMedicationLineOriginType"
+  },
+  {
+    "id" : "BEVSMedicationProductType",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/example/ValueSet/BEVSMedicationProductType",
+    "version" : "1.0.0",
+    "name" : "BEVSMedicationProductType"
   }
 ]

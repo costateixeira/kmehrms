@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "BEVSMedicationAdministrationRoute",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-BEMedicationAdministrationRoute.html\"><code>http://example.com/fhir/example/CodeSystem/BEMedicationAdministrationRoute</code></a></li></ul></div>"
+  },
+  "url" : "http://example.com/fhir/example/ValueSet/BEVSMedicationAdministrationRoute",
+  "version" : "1.0.0",
+  "name" : "BEVSMedicationAdministrationRoute",
+  "title" : "Medication line - route of administration",
+  "status" : "active",
+  "date" : "2023-03-05T16:02:38+00:00",
+  "publisher" : "My Organization",
+  "contact" : [{
+    "name" : "My Organization",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.com/committees"
+    },
+    {
+      "system" : "email",
+      "value" : "my-group@example.com"
+    }]
+  },
+  {
+    "name" : "Bob Smith",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "bobsmith@example.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Medication line - route of administration.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "056",
+      "display" : "Belgium"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.com/fhir/example/CodeSystem/BEMedicationAdministrationRoute"
+    }]
+  }
+}
