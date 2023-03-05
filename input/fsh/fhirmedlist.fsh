@@ -72,8 +72,8 @@ Parent: FHIRDocument
 * entry ^slicing.ordered = true
 * entry contains
   treatmentLine 0..* and 
-  treatment 0..* and 
-  treatmentOrder 0..*
+  treatment 0..* 
+//  and treatmentOrder 0..*
 
 * entry[treatmentLine].resource only TreatmentLine
 * entry[treatment].resource only Treatment
