@@ -7,12 +7,12 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
+id: medicationschema
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example/ImplementationGuide/my-ig
 name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
+title: "Belgium Medication Schema"
+description: Belgium Medication Schema.
 status: active
 license: CC0-1.0
 date: 2020-02-26
@@ -53,7 +53,7 @@ contact:
 # code syntax can be used here.
 
 #jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#056 "Belgium"
 
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
