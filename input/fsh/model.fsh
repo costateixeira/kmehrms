@@ -69,7 +69,13 @@ Title: "KMEHR MS"
       // * ^requirements = """
       //     * Sequential, starting from 2
       //   """
-      * id-others 0..* integer "Local ID of the medication line"
+      * id-others 0..* integer "Local ID of the medication line" 
+        * ^definition = """
+*Value set*:
+  * vitalinkuri
+  * RSBID
+  * RSWID
+"""
         * ^requirements = """
         * S-VALUE= LOCAL
         * SL-Value = 'vitalinkuri' - the identifier of the namespace
