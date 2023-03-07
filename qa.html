@@ -36,12 +36,12 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for ExampleIG</h1>
- <p>Generated Mon Mar 06 10:42:54 UTC 2023, FHIR version 4.0.1 for medicationschema#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Tue Mar 07 20:59:03 UTC 2023, FHIR version 4.0.1 for medicationschema#1.0.0 (canonical = <a href="http://example.com/fhir/example">http://example.com/fhir/example</a> (<a href="http://example.com/fhir/example/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.2.39</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.2.40, which is out of date. The current version is v?pub-ver-1? <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = medicationschema, Canonical = http://example.com/fhir/example</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from http://example.com/fhir/example/package-list.json?nocache=1678099373985 (Not Found) (content in /tmp/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from http://example.com/fhir/example/package-list.json?nocache=1678222743661 (Not Found) (content in /tmp/fhir-http-4.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
 <li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
 <li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
 </ul>
@@ -56,7 +56,7 @@
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: Invalid HTTP response 404 from http://example.com/fhir/example/package-list.json?nocache=1678099311139 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.com/fhir/example (Problem #1 with package-list.json at http://example.com/fhir/example: Invalid HTTP response 404 from http://example.com/fhir/example/package-list.json?nocache=1678222680584 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>Summary:</td><td> errors = 156, warn = 939, info = 8, broken links = 0</td></tr>
 </table>
@@ -248,7 +248,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem.title (l1/c1245)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Medication...day '</b></td>
+     <td><b>CodeSystem.title (l1/c1245)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Medication line - times of day '</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem.jurisdiction[0].coding[0] (l1/c1750)</b></td><td><b>warning</b></td><td><b>The display &quot;Belgium&quot; is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'</b> (<a href="qa-tx.html#l4">see Tx log</a>)</td>
@@ -391,7 +391,7 @@
      <td><b>ImplementationGuide.jurisdiction[0].coding[0] (l1/c966)</b></td><td><b>warning</b></td><td><b>The display &quot;Belgium&quot; is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'</b> (<a href="qa-tx.html#l4">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[25].name (l1/c16840)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Medication...day '</b></td>
+     <td><b>ImplementationGuide.definition.resource[25].name (l1/c16840)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Medication line - times of day '</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>fsh-generated/resources/ImplementationGuide-medicationschema</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://example.com/fhir/example/ImplementationGuide/medicationschema vs http://example.com/fhir/example/ImplementationGuide/my-ig</b></td>
@@ -1613,7 +1613,7 @@
      <td><b>StructureDefinition.snapshot.element[306] (l1/c962261)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[306].short (l1/c961828)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'using...medicine, '</b></td>
+     <td><b>StructureDefinition.snapshot.element[306].short (l1/c961828)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'using a link to the transaction (in the current MedicationSchema) of the related medicine, '</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.snapshot.element[307] (l1/c963124)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
@@ -3023,7 +3023,7 @@
      <td><b>StructureDefinition.differential.element[183] (l1/c1295330)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[183].short (l1/c1295016)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'using...medicine, '</b></td>
+     <td><b>StructureDefinition.differential.element[183].short (l1/c1295016)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'using a link to the transaction (in the current MedicationSchema) of the related medicine, '</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.differential.element[184] (l1/c1295813)</b></td><td><b>warning</b></td><td title="Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed"><b>Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed</b></td>
@@ -4149,16 +4149,16 @@
 <h2>Type_Specific_Checks_DT_String_WS</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="CodeSystem-BEMedicationLineDayPeriod.html">fsh-generated/resources/CodeSystem-BEMedicationLineDayPeriod.json</a></td><td><b>value should not start or finish with whitespace 'Medication...day '</b></td>
+     <td><a href="CodeSystem-BEMedicationLineDayPeriod.html">fsh-generated/resources/CodeSystem-BEMedicationLineDayPeriod.json</a></td><td><b>value should not start or finish with whitespace 'Medication line - times of day '</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="ImplementationGuide-medicationschema.html">fsh-generated/resources/ImplementationGuide-medicationschema.json</a></td><td><b>value should not start or finish with whitespace 'Medication...day '</b></td>
+     <td><a href="ImplementationGuide-medicationschema.html">fsh-generated/resources/ImplementationGuide-medicationschema.json</a></td><td><b>value should not start or finish with whitespace 'Medication line - times of day '</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-KMEHRMS.html">fsh-generated/resources/StructureDefinition-KMEHRMS.json</a></td><td><b>value should not start or finish with whitespace 'using...medicine, '</b></td>
+     <td><a href="StructureDefinition-KMEHRMS.html">fsh-generated/resources/StructureDefinition-KMEHRMS.json</a></td><td><b>value should not start or finish with whitespace 'using a link to the transaction (in the current MedicationSchema) of the related medicine, '</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="StructureDefinition-KMEHRMS.html">fsh-generated/resources/StructureDefinition-KMEHRMS.json</a></td><td><b>value should not start or finish with whitespace 'using...medicine, '</b></td>
+     <td><a href="StructureDefinition-KMEHRMS.html">fsh-generated/resources/StructureDefinition-KMEHRMS.json</a></td><td><b>value should not start or finish with whitespace 'using a link to the transaction (in the current MedicationSchema) of the related medicine, '</b></td>
    </tr>
 </table>
 <hr/>

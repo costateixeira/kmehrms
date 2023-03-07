@@ -2,8 +2,8 @@
 =========================================
 
 err = 156, warn = 939, info = 8
-IG Publisher Version: 1.2.39
-Generated Mon Mar 06 10:42:57 UTC 2023. FHIR version 4.0.1 for medicationschema#1.0.0 (canonical = http://example.com/fhir/example)
+IG Publisher Version: 1.2.40 Out of date - current version is ?pub-ver-1?
+Generated Tue Mar 07 20:59:07 UTC 2023. FHIR version 4.0.1 for medicationschema#1.0.0 (canonical = http://example.com/fhir/example)
  Build Errors : 0 / 8 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-BEMedicationAdministrationRoute : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-BEMedicationLineConsent : 0 / 3 / 2
@@ -58,7 +58,7 @@ INFORMATION: CodeSystem/BEMedicationLineConsent: CodeSystem: CodeSystems SHOULD 
 WARNING: CodeSystem/BEMedicationLineConsent: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 WARNING: CodeSystem/BEMedicationLineConsent: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/CodeSystem-BEMedicationLineDayPeriod.json ==
-WARNING: CodeSystem/BEMedicationLineDayPeriod: CodeSystem.title: value should not start or finish with whitespace 'Medication...day '
+WARNING: CodeSystem/BEMedicationLineDayPeriod: CodeSystem.title: value should not start or finish with whitespace 'Medication line - times of day '
 WARNING: CodeSystem/BEMedicationLineDayPeriod: CodeSystem.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
 INFORMATION: CodeSystem/BEMedicationLineDayPeriod: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/BEMedicationLineDayPeriod: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
@@ -92,7 +92,7 @@ WARNING: CodeSystem/BEMedicationProductType: CodeSystem: The ShareableCodeSystem
 ERROR: ImplementationGuide.where(url = 'http://example.com/fhir/example/ImplementationGuide/my-ig'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-medicationschema.json - the canonical URL (http://example.com/fhir/example/ImplementationGuide/medicationschema) does not match the URL (http://example.com/fhir/example/ImplementationGuide/my-ig)
 ERROR: ImplementationGuide.url: Resource id/url mismatch: medicationschema/http://example.com/fhir/example/ImplementationGuide/my-ig
 WARNING: ImplementationGuide/medicationschema: ImplementationGuide.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
-WARNING: ImplementationGuide/medicationschema: ImplementationGuide.definition.resource[25].name: value should not start or finish with whitespace 'Medication...day '
+WARNING: ImplementationGuide/medicationschema: ImplementationGuide.definition.resource[25].name: value should not start or finish with whitespace 'Medication line - times of day '
 ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-medicationschema: URL Mismatch http://example.com/fhir/example/ImplementationGuide/medicationschema vs http://example.com/fhir/example/ImplementationGuide/my-ig
 == fsh-generated/resources/StructureDefinition-CD.json ==
 WARNING: StructureDefinition/CD: StructureDefinition.jurisdiction[0].coding[0]: The display "Belgium" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}056 - should be one of ['Belgium (BEL)'] (from http://tx.fhir.org/r4) for 'http://unstats.un.org/unsd/methods/m49/m49.htm#056'
@@ -483,7 +483,7 @@ WARNING: StructureDefinition/KMEHRMS: StructureDefinition.snapshot.element[303]:
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.snapshot.element[304]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.snapshot.element[305]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.snapshot.element[306]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/KMEHRMS: StructureDefinition.snapshot.element[306].short: value should not start or finish with whitespace 'using...medicine, '
+WARNING: StructureDefinition/KMEHRMS: StructureDefinition.snapshot.element[306].short: value should not start or finish with whitespace 'using a link to the transaction (in the current MedicationSchema) of the related medicine, '
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.snapshot.element[307]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.snapshot.element[308]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.snapshot.element[309]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
@@ -953,7 +953,7 @@ WARNING: StructureDefinition/KMEHRMS: StructureDefinition.differential.element[1
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.differential.element[181]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.differential.element[182]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.differential.element[183]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/KMEHRMS: StructureDefinition.differential.element[183].short: value should not start or finish with whitespace 'using...medicine, '
+WARNING: StructureDefinition/KMEHRMS: StructureDefinition.differential.element[183].short: value should not start or finish with whitespace 'using a link to the transaction (in the current MedicationSchema) of the related medicine, '
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.differential.element[184]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.differential.element[185]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/KMEHRMS: StructureDefinition.differential.element[186]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
